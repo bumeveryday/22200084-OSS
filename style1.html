@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>22200084</title>
+<style>
+body {
+    font: 100% Verdana;
+    margin: 20px;
+    line-height: 26px;
+}
+
+#menu_wrapper{
+margin: 5px;
+padding: 5px;
+display: flex;
+height: 20%;
+flex-direction: column;
+}
+a:link{
+    color : black;
+}
+
+#linkbox-self,.linkbox{
+    background-color: #04AA6D;
+    border-style:solid;
+    border-color: black 1px;
+    border-radius: 1px;
+    padding: 3px;
+    margin: 5px;
+    font-size:large;
+display: flex;
+}
+.linkbox{
+background-color: gray;
+}
+
+#title{
+    font-size: larger;
+    color: #04AA6D;
+    text-align: left;
+    line-height: normal;
+    justify-content: center;
+    
+}
+#link_sidebar{
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+#main_wrapper{
+    display: flex;
+    min-height: 80%;
+    margin-bottom: 150px;
+    flex:1;
+
+}   
+
+#sidebar{
+padding: 10px;
+margin: 10px;
+display: flex;
+flex-direction: column;
+flex: 1;
+overflow: visible;
+background-color: lightgrey;
+
+}
+@media (max-width: 600px) {
+    #sidebar {
+       width: auto;
+       margin-bottom:10px;        
+       position: relative;
+    }    
+}
+
+.smol{
+text-align: left;
+color: #04AA6D;
+}
+
+#bottom {
+
+    text-align: center;
+    padding: 10px;
+    font-size: 70%;
+    line-height: 14px;
+    height: 50px;
+    width: 100%;
+
+        border-radius: 4px;
+    margin: 4px;
+}
+
+
+
+</style>
+
+
+</head>
+<body>
+    <div>
+        <div class = "smol">
+            <h1>Welcome to 22200084's Homepage</h1>
+        </div>
+            <a>Use the menu to select different Stylesheets :</a>
+            
+        <div id = "link_sidebar">
+            
+        <div class="linkbox">
+                <a href="index.html", > stylesheet 1 </a>
+            </div>
+            <div id ="linkbox-self">
+                <a href="style1.html", > stylesheet 2 </a>
+            </div>
+            <div class="linkbox">
+                <a href="style2.html", > stylesheet 3 </a>
+            </div>
+        </div>
+    </div>
+        </div>
+    
+    
+    <div class = "main_wrapper"> 
+        <div class = smol>
+            <h1>Same Page Different Stylesheets</h1>
+        </div>            
+            <p>This is a demonstration of how different stylesheets can change the layout of your HTML page. You can change the layout of this page by selecting different stylesheets in the menu, or by selecting one of the following links:
+            <br>
+                <a href="index.html">Stylesheet 1,</a>
+            <a href="style1.html">stylesheet2,</a>
+            <a href="style2.html">stylesheet3</a>
+
+        <div class="smol">
+            <h1>No Style</h1>
+        </div>
+            <p>This page uses DIV elements to group different sections of the HTML page. Click here to see how the page looks like with no stylesheet:<br><a href="nostyle.html">No Stylesheet</a>.</p>
+
+        
+        <div id = "sidebar">
+            <div class="smol">
+            <h2>Side-bar</h2> 
+            </div>
+            <a>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</a>    
+    
+        </div>
+        
+    </div>
+    
+    <div id = "bottom">
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+</p>
+    
+    </div>
+</body>
+</html>
