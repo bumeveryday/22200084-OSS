@@ -27,8 +27,12 @@ border-style:dashed;
 padding: 5px;
 border-width: 1px;
 margin: 10px;
-
 }
+
+.checked-blue {
+    color: #007BFF;
+}
+
 
 #checkbox{
     flex-direction: column;
@@ -68,7 +72,7 @@ margin: 10px;
                     <div class="checkblock">i want to play BG<input type="checkbox" id="want1" name="want1" value="1"><br></div>
                     <div class="checkblock">i want to borrow BG<input type="checkbox" id="want2" name="want2" value="2"> <br></div>
                     <div class="checkblock">i want to make BG<input type="checkbox" id="want3" name="want3" value="3"> <br></div>
-                    <div class="checkblock">i want to make GF<input type="checkbox" id="want3" name="want4" value="4"></div>
+                    <div class="checkblock">i want to make GF<input type="checkbox" id="want4" name="want4" value="4"></div>
             </div>
             
             
@@ -83,6 +87,7 @@ margin: 10px;
                 <textarea name="subject" cols= 40 rows = 5></textarea>
             </div>
             <input type="submit" value="Save">
+
         <a href="form_nostyle.html">form_nostyle</a><br>
             <a href="form_style.html">form_style</a><br>
             <a href="form_js.html">form_js</a><br>
@@ -114,6 +119,19 @@ margin: 10px;
             if(!isEmpty()){
                 event.preventDefault();
             }
+        });
+
+                const checkboxes = document.querySelectorAll('#checkbox .checkblock input[type="checkbox"]');
+        
+        checkboxes.forEach(checkbox => {
+            checkbox.addEventListener('change', (event) => {
+                const parentDiv = event.target.parentNode;
+                if (event.target.checked) {
+                    parentDiv.classList.add('checked-blue');
+                } else {
+                    parentDiv.classList.remove('checked-blue');
+                }
+            });
         });
         
 
